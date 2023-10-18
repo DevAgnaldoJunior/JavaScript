@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Condição</title>
+</head>
+<body>
+    <h1>Controle de Brasileiros</h1>
+    Digite seu país de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="consultar()">
+    <div id="resultado">
+        RESULTADO
+    </div>
+
+    <script>
+        function consultar(){
+        var pais = window.document.getElementById('pais')
+        var result = window.document.getElementById('resultado')
+        var pais =String(pais.value)
+
+        result.innerHTML = `Vivendo em ${pais} ---`
+
+        if(pais == 'Brasil'){
+            result.innerHTML += ('Você é Brasileiro')
+        } else if(pais == 'França'){
+                result.innerHTML += ('Você é Françes')
+            } else if(pais == 'Inglaterra'){
+                result.innerHTML += ('Você é inglês')
+            } else if(pais== 'Portugal'){
+                result.innerHTML += ('Você é Potugues')
+                }else{
+                    result.innerHTML += ('Você é Estrangeiro')
+                }
+            }              
+    </script>
+
+    <p>---------------------------------------------------------</p>
+   
+    
+</body>
+</html>
