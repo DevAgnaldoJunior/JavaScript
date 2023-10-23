@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(68, 68, 250);
+    color: white;
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+section>div{
+    color: black;
+}
